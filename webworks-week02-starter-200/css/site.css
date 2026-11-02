@@ -22,7 +22,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 23px;
-  color: #4C5148;
+  color: #000000;
 }
 
 h2 {
@@ -35,6 +35,11 @@ h2 {
 a {
   color: #285B39;
   
+.green {
+  color: #315C3D
+}
+
+
 }
 
 a:hover {
@@ -44,6 +49,7 @@ a:hover {
 .navcell {
   background-color: #315C3D;
   height: 34px;
+  color: #FFFFFF;
 }
 
 .navcell a {
@@ -84,11 +90,11 @@ td {
 
 /* duplicate link rules from later update */
 a:link {
-  color: #285B39
+  color: #000000
 }
 
 a:visited {
-  color: #6C4E32
+  color: #0c0664;
 }
 
 a:active {
