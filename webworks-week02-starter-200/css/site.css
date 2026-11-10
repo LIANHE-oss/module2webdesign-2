@@ -2,13 +2,20 @@
    Last updated: 08/17/2000
 */
 
+
+
+
 body {
-  margin-top: 18px;
-  margin-bottom: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   background-color: #E8E1C9;
   color: #333333;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  margin: auto;
+  margin-left: 30%;
+  margin-right: 30%;
 
 }
 
@@ -18,12 +25,40 @@ p {
   line-height: 20px;
 }
 
-.intro {
+.top-header{
+  display: grid;
+  grid-column: 1/3;
+  gap: .5rem;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 23px;
   color: #000000;
 }
+
+.call{
+  display: grid;
+  grid-template-columns: 1 fr 1fr;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: .5rem;
+  align-items: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+hr.solid{
+   border: none;
+  height: 0.5rem;
+  background-color: #315C3D;
+}
+
+
 
 h2 {
   font-family: Georgia, "Times New Roman", serif;
@@ -35,10 +70,6 @@ h2 {
 a {
   color: #285B39;
   
-.green {
-  color: #315C3D
-}
-
 
 }
 
@@ -46,10 +77,13 @@ a:hover {
   color: #993300;
 }
 
-.navcell {
+.topnav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   background-color: #315C3D;
-  height: 34px;
   color: #FFFFFF;
+  height: 34px;
+  align-content: center;
 }
 
 .navcell a {
@@ -58,6 +92,7 @@ a:hover {
   font-size: 11px;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 .navcell a:hover {
@@ -66,6 +101,42 @@ a:hover {
 
 .photo {
   border: 1px solid #9E9475;
+}
+
+.plant-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 40px;
+  background-color: #FFF3B8;
+  height: 7rem;
+  align-content: center;
+}
+
+.page-information{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 20px;
+  align-content: center;
+  gap: 2rem;
+  
+}
+
+.links{
+  background-color: #FFF3B8;
+  justify-content: start;
+  align-items: start;
+  width: 10rem;
+  height: 30rem;
+}
+
+.services{
+  justify-content: end;
+}
+
+.footer-nav {
+  color: #000000;
+  text-align: center;
+  align-content: center;
 }
 
 .footertext {
@@ -78,6 +149,13 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
 }
+
+.footer-grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
 
 /* old notes
 .green { color: #315C3D; }
